@@ -4,6 +4,7 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
+  FaCertificate,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -26,6 +27,11 @@ const Navbar = () => {
         <li>
           <Link to='about' smooth={true} duration={500}>
             About
+          </Link>
+        </li>
+        <li>
+          <Link to='Project' smooth={true} duration={500}>
+            Project
           </Link>
         </li>
         <li>
@@ -66,6 +72,12 @@ const Navbar = () => {
         </li>
         <li className='py-6 text-4xl'>
           {' '}
+          <Link onClick={handleClick} to='project' smooth={true} duration={500}>
+            Project
+          </Link>
+          </li>
+        <li className='py-6 text-4xl'>
+          {' '}
           <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
             Skills
           </Link>
@@ -104,7 +116,7 @@ const Navbar = () => {
     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
       <a
         className='flex justify-between items-center w-full text-gray-300'
-        href='mailto:youremail@example.com'
+        href='Bictorperez115@Gmail.com'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -114,13 +126,24 @@ const Navbar = () => {
     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
       <a
         className='flex justify-between items-center w-full text-gray-300'
-        href='https://yourwebsite.com/resume'
+        href='https://bperez011.github.io/Resume/'
         target='_blank'
         rel='noopener noreferrer'
       >
         Resume <BsFillPersonLinesFill size={30} />
       </a>
     </li>
+    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#800020]'>
+      <a
+        className='flex justify-between items-center w-full text-gray-300'
+        href='https://www.credly.com/badges/2d6d21a4-d0bc-455e-8914-d7a72dc33b3c/public_url'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Creadly <FaCertificate size={30} />
+      </a>
+    </li>
+
   </ul>
 </div>
     </div>
